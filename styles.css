@@ -96,7 +96,7 @@ select{
   background-color: #d1d1d1;
 }
 
-/* Smaller Screen */
+/* Smaller Screens */
 
 @media screen and (max-width: 800px) {
   table{

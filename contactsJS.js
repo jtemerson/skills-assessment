@@ -20,6 +20,7 @@ function displayContacts(contacts){
   for(var i = 0; contacts.length > i; i++){
 
     var tr = document.createElement("tr");
+    // tr.setAttribute("class", "greyOut");
     var td1 = document.createElement("td");
     var td2 = document.createElement("td");
     td2.setAttribute("class", "block");
@@ -84,7 +85,9 @@ else{
 
 
 
-//test comment
+
+
+
 
 
 
