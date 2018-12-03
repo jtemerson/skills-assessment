@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body, html {
+  height: 100%;
+  display: grid;
+  background-color: #d1d1d1;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+caption{
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 3%;
+  border: 1px solid #272727;
+  background-color: #1a1a1a;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+table{
+  width: 50%;
+  margin: auto;
+  background-color: #272727;
+  color: #d1d1d1;
+  font-size: 1.5em;
+  border: 1px solid #272727;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+tbody{
+  color: #d1d1d1;
+  background-color: #272727;
+}
+
+tfoot{
+  background-color: #272727;
+}
+
+/* tr::before{
+  content: ".....";
+  position: relative;
+  padding: 3%;
+  left: 50%;
+  font-size: 10px;
+  color:#32cd32;
+  background-color: #32cd32;
+  border-radius: 50%;
+  margin: auto;
+} */
+
+td{
+  padding: 2%;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background-color: #1a1a1a;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+tr:hover .hide{
+  display: block;
+  font-size: 0.75em;
+  animation: fadeIn 3.5s;
+}
+
+tr:hover .block{
+  display: block;
+  font-size: 0.75em;
+  animation: fadeIn 3.5s;
+}
+
+tbody > tr:nth-of-type(odd):hover {
+    background-color: #484848;
+}
+
+tbody > tr:nth-of-type(even):hover {
+    background-color: #484848;
+}
+
+select{
+  width: 50%;
+  float: right;
+  margin-right: 10%;
+  background-color: #d1d1d1;
+}
+
+/* Smaller Screen */
+
+@media screen and (max-width: 800px) {
+  table{
+    width: 100%;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  table{
+    font-size: 1em;
+  }
+}

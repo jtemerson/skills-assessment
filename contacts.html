@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>14Four Skills Assessment</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="contactsJS.js"></script>
+  </head>
+
+  <body onLoad="displayContacts(contacts)">
+    <main>
+      <table>
+        <caption>Contacts</caption>
+        <tbody id="contactTable">
+          <!-- contacts go here -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>
+              <select onChange="displayByEmail(contacts)" id="select">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+              </select>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <p id="test"></p>
+    </main>
+  </body>
+</html>
